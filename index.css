@@ -1,0 +1,31 @@
+<!-- Custom CSS -->
+  
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .profile-img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .section {
+      padding: 60px 0;
+    }
+
+    .project-card {
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
