@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pedro Jr. Nable Tomol | Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="certificate.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+	<header class="header"> 
+		<a href="#" class="logo">PEDRO JR. NABLE TOMOL</a>
+
+		<nav class="navbar" id="navbar">
+
+			<a href="index.html">Home</a>
+			<!-- <a href="#">Experience</a> -->
+			<a href="certificate.html" class="active">Certificate</a>
+			<a href="#">Skills</a>
+			<!-- <a href="#">Contact</a> -->
+			<a href="#">About</a>
+		</nav>
+
+		<div class="menu-icon" onclick="toggleMenu()">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div>
+
+	</header>
+
+	<div class="picture-container">
+		<div class="picture">
+			<img src="certificate/ZUITT Free Coding Bootcamp.jpg" alt="Image 1" onclick="openPopup('popup1')">
+			<div class="popup" id="popup1">
+				<span class="close" onclick="closePopup('popup1')">&times;</span>
+				<img src="certificate/ZUITT Free Coding Bootcamp.jpg" alt="Image 1">
+			</div>
+		</div>
+		<div class="picture">
+			<img src="certificate/Csharp.jpg" alt="Image 2" onclick="openPopup('popup2')">
+			<div class="popup" id="popup2">
+				<span class="close" onclick="closePopup('popup2')">&times;</span>
+				<img src="certificate/Csharp.jpg" alt="Image 2">
+			</div>
+		</div>
+		<div class="picture">
+			<img src="certificate/certificate TQ Agile & DevOps.jpg" alt="Image 3" onclick="openPopup('popup3')">
+			<div class="popup" id="popup3">
+				<span class="close" onclick="closePopup('popup3')">&times;</span>
+				<img src="certificate/certificate TQ Agile & DevOps.jpg" alt="Image 3">
+			</div>
+		</div>
+		<div class="picture">
+			<img src="certificate/certificate of Quantum Computing.jpg" alt="Image 4" onclick="openPopup('popup4')">
+			<div class="popup" id="popup4">
+				<span class="close" onclick="closePopup('popup4')">&times;</span>
+				<img src="certificate/certificate of Quantum Computing.jpg" alt="Image 4">
+			</div>
+		</div>
+		<div class="picture">
+			<img src="certificate/certificate TQ 5G & Edge Computing.jpg" alt="Image 5" onclick="openPopup('popup5')">
+			<div class="popup" id="popup5">
+				<span class="close" onclick="closePopup('popup5')">&times;</span>
+				<img src="certificate/certificate TQ 5G & Edge Computing.jpg" alt="Image 5">
+			</div>
+		</div>
+		<div class="picture">
+			<img src="certificate/certificate TQ Artificial Intelligence (AI).jpg" alt="Image 6" onclick="openPopup('popup6')">
+			<div class="popup" id="popup6">
+				<span class="close" onclick="closePopup('popup6')">&times;</span>
+				<img src="certificate/certificate TQ Artificial Intelligence (AI).jpg" alt="Image 6">
+			</div>
+		</div>
+		<div class="picture">
+			<img src="certificate/certificate TQ Automation.jpg" alt="Image 7" onclick="openPopup('popup7')">
+			<div class="popup" id="popup7">
+				<span class="close" onclick="closePopup('popup7')">&times;</span>
+				<img src="certificate/certificate TQ Automation.jpg" alt="Image 7">
+			</div>
+		</div>
+		<div class="picture">
+			<img src="certificate/certificate TQ Data.jpg" alt="Image 8" onclick="openPopup('popup8')">
+			<div class="popup" id="popup8">
+				<span class="close" onclick="closePopup('popup8')">&times;</span>
+				<img src="certificate/certificate TQ Data.jpg" alt="Image 8">
+			</div>
+		</div>
+		<div class="picture">
+			<img src="certificate/certificate TQ Enterprise Platforms.jpg" alt="Image 9" onclick="openPopup('popup9')">
+			<div class="popup" id="popup9">
+				<span class="close" onclick="closePopup('popup9')">&times;</span>
+				<img src="certificate/certificate TQ Enterprise Platforms.jpg" alt="Image 9">
+			</div>
+		</div>
+		<div class="picture">
+			<img src="certificate/certificate TQ Security.jpg" alt="Image 10" onclick="openPopup('popup10')">
+			<div class="popup" id="popup10">
+				<span class="close" onclick="closePopup('popup10')">&times;</span>
+				<img src="certificate/certificate TQ Security.jpg" alt="Image 10">
+			</div>
+		</div>
+		<div class="picture">
+			<img src="certificate/certificate TQ Sustainability & Technology.jpg" alt="Image 11" onclick="openPopup('popup11')">
+			<div class="popup" id="popup11">
+				<span class="close" onclick="closePopup('popup11')">&times;</span>
+				<img src="certificate/certificate TQ Sustainability & Technology.jpg" alt="Image 11">
+			</div>
+		</div>
+		<div class="picture">
+			<img src="certificate/certificate TQ XR and the Metaverse.jpg" alt="Image 12" onclick="openPopup('popup12')">
+			<div class="popup" id="popup12">
+				<span class="close" onclick="closePopup('popup12')">&times;</span>
+				<img src="certificate/certificate TQ XR and the Metaverse.jpg" alt="Image 12">
+			</div>
+		</div>
+		
+	</div>
+	<div id="overlay"></div> <!-- Background overlay -->
+
+
+
+
+	
+
+
+	<script>
+		function toggleMenu() {
+			var navbar = document.querySelector('.navbar');
+			navbar.classList.toggle('active');
+		}
+
+		function openPopup(id) {
+			document.getElementById(id).style.display = "block";
+  			document.getElementById('overlay').style.display = "block"; // Show overlay
+ 			document.body.style.overflow = "hidden"; // Disable scrolling
+ 		}
+
+ 		function closePopup(id) {
+ 			document.getElementById(id).style.display = "none";
+  			document.getElementById('overlay').style.display = "none"; // Hide overlay
+ 			document.body.style.overflow = ""; // Enable scrolling
+ 		}
+
+
+ 	</script>
+
+ </body>
+ </html>

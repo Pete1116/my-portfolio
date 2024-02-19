@@ -1,52 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Pedro Jr. Nable Tomol - Portfolio</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedro Jr. Nable Tomol | Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
 
+  <header class="header"> 
+    <a href="#" class="logo">PEDRO JR. NABLE TOMOL</a>
 
-	<div class="header">
-    <img src="profile.jpg" alt="Profile Picture" class="profile-img">
-    <h1>Pedro Jr. Nable Tomol</h1>
-    <p>BS Computer Engineering Graduate</p>
-  </div>
+    <nav class="navbar" id="navbar">
 
-  <div class="container section">
-    <h2>Experience</h2>
+      <a href="index.html" class="active">Home</a>
+      <!-- <a href="#">Experience</a> -->
+      <a href="certificate.html">Certificate</a>
+      <a href="#">Skills</a>
+      <!-- <a href="#">Contact</a> -->
+      <a href="#">About</a>
+    </nav>
 
-    <div class="row">
-      <div class="col-md-6">
-        <div class="project-card">
-          <div class="card-body">
-            <h5 class="card-title">Associate Quality Assurance at J&T Express Philippines</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua.</p>
-          </div>
-        </div>
-      </div>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
 
-      <div class="col-md-6">
-        <div class="project-card">
-          <div class="card-body">
-            <h5 class="card-title">Associate Software Engineer at Accenture</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua.</p>
-          </div>
+  </header>
+
+  <section class="home">
+    <div class="home-sci">
+      <a href="https://www.facebook.com/PeterNableTomolJr" target=_blank><i class='bx bxl-facebook'></i></a>
+      <a href="#"><i class='bx bxl-linkedin'></i></a>
+    </div>
+
+    <div class="home-content">
+      <h1>Hi, I'm Pedro Jr. Nable Tomol</h1>
+      <h3>BS Computer Engineering</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur.</p>
+
+      <a href="mailto:petztomol@gmail.com" class="btn">Email Me</a>
+    </div>
+
+    <div class="home-img">
+      <div class="glowing-circle">
+        <span></span>
+        <span></span>
+        <div class="image">
+          <img src="images/me.jpg">
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Bootstrap JS and jQuery (optional) -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+  <script>
+    function toggleMenu() {
+      var navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('active');
+    }
+  </script>
 
 </body>
 </html>
