@@ -458,6 +458,14 @@ body {
   .menu-icon.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+
+  /* Popup */
+  .popup {
+   width: 100%; /* Full width */ 
+  }
+  .close{
+    font-size: 55px;
+  }
 }
 
 
@@ -629,4 +637,9 @@ body {
   .menu-icon.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+  
+
+
+
+
 }
