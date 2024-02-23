@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Jr. Nable Tomol | Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="about.css">
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+  <header class="header"> 
+    <a href="#" class="logo">PEDRO JR. NABLE TOMOL</a>
+    <nav class="navbar" id="navbar">
+      <a href="index.html">Home</a>
+      <a href="certificate.html">Certificates</a>
+      <a href="Resume.pdf" download="Resume" target="_blank">Resume</a>
+      <a href="about.html" class="active">About</a>
+    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>About</h1>
+    <div class="about-section">
+      <div class="about-subsection">
+        <h2>Work Experience:</h2>
+        <p>•Associate Quality Assurance at J&T Express</p>
+        <p>•Associate Software Engineer at Acenture</p>
+      </div>
+      <div class="about-subsection">
+        <h2>Education:</h2>
+        <p>•Silago National Vocational High School At Silago Southern Leyte</p>
+        <p>•Southern Leyte State University at Sogod Southern Leyte</p>
+      </div>
+      <div class="about-subsection">
+        <h2>Places Lived:</h2>
+        <p>•Mabolo Cebu City</p>
+      </div>
+      <div class="about-subsection">
+        <h2>Contacts:</h2>
+        <p>•09064517671</p>
+        <p>•petztomol@gmail.com</p>
+      </div>
+      <div class="about-subsection">
+        <h2></h2>
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      var navbar = document.getElementById('navbar');
+      navbar.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

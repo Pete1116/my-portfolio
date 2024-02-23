@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0c1022;
+  color: #fff;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #0c1022;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  pointer-events: none;
+  animation: slidetop 1s ease forwards;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  background: linear-gradient(45deg, #f06, #3cf);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+  width: 100%;
+}
+
+.about-subsection {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center align items vertically */
+}
+
+.about-subsection h2 {
+  flex: 1; /* Flex h2 to adjust to space */
+  text-align: left; /* Left-align text */
+  color: ;
+}
+
+.about-subsection p {
+  text-align: right; /* Right-align text */
+  margin-right: 0; /* Remove right margin */
+  margin-left: 20px; /* Add left margin for spacing */
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Responsive media queries */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%; /* Adjust container width for smaller screens */
+    margin: 50px auto; /* Adjust margin for smaller screens */
+  }
+  
+  .about-subsection {
+    flex-direction: column; /* Stack subsections vertically on smaller screens */
+    align-items: flex-start; /* Left-align items vertically */
+  }
+  
+  .about-subsection h2,
+  .about-subsection p {
+    text-align: left; /* Left-align text on smaller screens */
+    margin: 10px 0; /* Adjust margins for spacing */
+  }
+}
+
+
+
+
+@media (max-width: 688px){
+  .navbar{
+    display: none;
+  }
+
+  .logo {
+    font-size: 15px; /* Further decrease logo font size */
+
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: all 0.3s ease; /* Add transition */
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items to the start (top) */
+    background-color: #0c1022;
+    position: absolute;
+    top: 100%; /* Initially position below the header */
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    opacity: 0; /* Initially hidden */
+    pointer-events: none; /* Initially not clickable */
+    /*  transition: all 0.3s ease; /* Add transition */*/
+  }
+
+  .navbar.active {
+    opacity: 1; /* Show navbar */
+    top: calc(100% + 20px); /* Move navbar down to be below the header */
+    pointer-events: auto; /* Make navbar clickable */
+    margin-top: -20px;
+  }
+
+  *.navbar a{
+    font-size: 20px;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .menu-icon.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-icon.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
